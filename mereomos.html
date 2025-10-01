@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styling.css">
+    <title> Mød new venner</title>
+    <style>
+        #information {
+            min-height: 800px;
+        }
+
+        .article_image {
+            height: 100vw;
+            width: 80vw;
+            margin: 0 0 2px 10%;
+            display: block;
+            border-radius: 80px 20px;
+            scale: .8;
+            opacity: 0;
+            animation: image_disapear;
+            animation-timeline: view();
+            animation-range: entry exit;
+            animation-delay: 5seg;
+        }
+
+
+
+        @keyframes image_disapear {
+            to {
+                scale: 1;
+                opacity: 98%;
+            }
+
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header style="background:linear-gradient(to bottom right,rgb(75, 75, 128),rgb(37, 141, 37)); ">
+
+        <a href="index.html"> <img src="img/logo2.png" alt="" id="logo"> </a> <!--Logo-->
+        <h1 id="motto"> Det er os !</h1>
+        <nav> <!--menu links-->
+            <ul id="links">
+                <li><a href="index.html">
+                        <img src="img/ikons/hus_ikon.png" alt="" id="hus"></a>
+                </li>
+                </a>
+
+                <div class="kontak_os">
+                    kontakt os
+                    <div id="box-ikons">
+                        <img src="img/ikons/e-mail_ikon.png" class="ikon" alt="">
+                        <img src="img/ikons/telefon_ikon.png" class="ikon" alt="">
+                        <img src="img/ikons/facebookicon.png" class="ikon" alt="">
+                        <img src="img/ikons/twittericon.png" class="ikon" alt="">
+                        <img src="img/ikons/instagramicon.png" class="ikon" alt="">
+
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="information">
+        <articles>
+            <h2> Hvad er Nær?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Saepe sunt beatae quas placeat voluptas neque animi sed
+                voluptate a veritatis quibusdam omnis dolorem esse ea
+                officiis est ullam, molestiae at.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Saepe sunt beatae quas placeat voluptas neque animi sed
+                voluptate a veritatis quibusdam omnis dolorem esse ea
+                officiis est ullam, molestiae at.
+                officiis est ullam, molestiae at.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Saepe sunt beatae quas placeat voluptas neque animi sed
+                voluptate a veritatis quibusdam omnis dolorem esse ea
+                officiis est ullam, molestiae at
+                officiis est ullam, molestiae at.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Saepe sunt beatae quas placeat voluptas neque animi sed
+                voluptate a veritatis quibusdam omnis dolorem esse ea
+                officiis est ullam, molestiae at
+                <img src="img/working_with_computer.jpg" alt="" class="article_image first">
+        </articles>
+        <articles>
+            <h2> Vores hold </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Saepe sunt beatae quas placeat voluptas neque animi sed
+                voluptate a veritatis quibusdam omnis dolorem esse ea
+                officiis est ullam, molestiae at.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Saepe sunt beatae quas placeat voluptas neque animi sed
+                voluptate a veritatis quibusdam omnis dolorem esse ea
+                officiis est ullam, molestiae at.</p>
+            <img src="img/workteam.jpg" alt="" class="article_image second  ">
+        </articles>
+        <articles>
+            <h2> vores mål</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Saepe sunt beatae quas placeat voluptas neque animi sed
+                voluptate a veritatis quibusdam omnis dolorem esse ea
+                officiis est ullam, molestiae at.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Saepe sunt beatae quas placeat voluptas neque animi sed
+                voluptate a veritatis quibusdam omnis dolorem esse ea
+                officiis est ullam, molestiae at.</p>
+            <img src="img/vores_mål.jpg" alt="" class="article_image third">
+        </articles>
+    </div>
+
+
+
+
+</body>
+
+</html>

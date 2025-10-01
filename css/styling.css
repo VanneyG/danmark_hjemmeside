@@ -1,0 +1,319 @@
+/*the repetitive format to be seen in every side */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    min-height: 1000px;
+    color: #a18835;
+}
+
+#hus {
+    height: 18px;
+    margin-right: 10px;
+}
+
+.ikon {
+    height: 18px;
+}
+
+#box-ikons {
+    display: none;
+}
+
+
+
+header {
+    height: 200px;
+    background-color: darkcyan;
+    position: relative;
+    background-image: url('../img/venner2');
+    text-shadow: rgb(36, 2, 34) 1px 1px;
+}
+
+#logo {
+    height: 22em;
+    height: 100px;
+    top: 2%;
+    left: 1%;
+    position: relative
+}
+
+a,
+.kontak_os {
+    text-decoration: none;
+    color: #292929;
+    text-shadow: black .3px .3px;
+    font-weight: bold;
+    font-size: medium;
+}
+
+#searcher h3 {
+    color: #c229e0;
+    text-shadow: white .2px .2px;
+
+}
+
+/*-------------------------------------------------------------------*/
+
+.kontak_os:hover {
+    #box-ikons {
+        display: block
+    }
+}
+
+#links a:hover::after {
+    /*når vi hover over det */
+    content: '';
+    width: 100%;
+    height: .2em;
+    background-color: rgb(71, 3, 110);
+    display: block;
+
+}
+
+
+
+
+#links a:active {
+    /* cuando hacemos click*/
+    color: rgb(37, 14, 34)
+}
+
+
+#motto {
+    position: absolute;
+    left: 30%;
+    bottom: 2em;
+}
+
+#searcher {
+    margin: 2em;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#searcher hr {
+    height: 1.2em;
+    border-bottom: solid 2px #292929;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+
+}
+
+nav {
+    position: absolute;
+    bottom: 15px;
+    right: 5px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    display: inline;
+    /*  padding-left: 5px; */
+    font-size: medium;
+    margin-right: 9px;
+
+}
+
+h3,
+h5 {
+    text-align: center;
+}
+
+
+/*  carousel of images with the arrows to the sides. */
+.carousel {
+    width: 100%;
+    overflow-x: auto;
+    margin: 3em auto;
+    display: flex;
+    gap: 1em;
+    scroll-behavior: smooth;
+
+    scroll-snap-type: x mandatory;
+    scroll-marker-group: after;
+}
+
+.galery1 {
+    anchor-name: --arrows;
+}
+
+.galery2 {
+    anchor-name: --flechas;
+}
+
+.galery3 {
+    anchor-name: --flechas2;
+}
+
+.galery4 {
+    anchor-name: --flechas3;
+}
+
+.galery5 {
+    anchor-name: --flechas4;
+}
+
+/*-----------------------------------------*/
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+/*---------------------------------------------------------*/
+.carousel::scroll-button(right),
+.carousel::scroll-button(left) {
+    content: ' → ';
+    border: none;
+    background-color: #0c217e;
+    font-family: sans-serif;
+    font-size: 3rem;
+    color: white;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    padding-bottom: 0.1em;
+    cursor: pointer;
+    /*fija la position de las flechas*/
+    position: fixed;
+    position-anchor: --arrows;
+    position-area: right center;
+    translate: -90%;
+}
+
+.galery1::scroll-button(right),
+.galery1::scroll-button(left) {
+    position-anchor: --arrows;
+
+}
+
+.galery2::scroll-button(right),
+.galery2::scroll-button(left) {
+    position-anchor: --flechas;
+
+}
+
+.galery3::scroll-button(right),
+.galery3::scroll-button(left) {
+    position-anchor: --flechas2;
+}
+
+
+.galery4::scroll-button(right),
+.galery4::scroll-button(left) {
+    position-anchor: --flechas3;
+
+}
+
+.galery5::scroll-button(right),
+.galery5::scroll-button(left) {
+    position-anchor: --flechas4;
+
+}
+
+/*------------------------------------------------------------*/
+
+
+.carousel::scroll-button(left) {
+    content: '←';
+    position-area: left center;
+    translate: 90%;
+}
+
+/*---------------------------------------------------------*/
+
+.carousel::scroll-button(right):disabled,
+.carousel::scroll-button(left):disabled {
+    opacity: 0.1;
+    cursor: auto;
+}
+
+/*--------------------------------------------------------*/
+
+.card {
+    flex: 0 0 15em;
+    /*flex positiona las tarjetas dando un ancho de 20, causando un overflow
+  que automaticamente genera un scrollbar, por eso debimos desactivar el scrollbar arriba */
+    height: 12em;
+    background-color: #444c01;
+    padding: 1em;
+    /* marco  delgado que puede agrandarse_ da paso entre el background y la imagen */
+    border-radius: .5em;
+    text-align: center;
+    align-content: center;
+    scroll-snap-align: start
+        /* va de la mano con el scroll-snap-type del contenedor;*/
+}
+
+/*-----------------------------------------------------------*/
+.carousel::scroll-marker-group {
+    display: flex;
+    /* to have themm in a line */
+    justify-content: center;
+    gap: .5em;
+
+    margin-bottom: 50px;
+}
+
+.card::scroll-marker {
+    content: '';
+    /* cards1 es la clase dada a todas las img de la galleria */
+    height: 1em;
+    width: 1em;
+    background-color: silver;
+    border-radius: 50%;
+}
+
+.card::scroll-marker:target-current {
+    background-color: rgb(80, 39, 6)
+}
+
+/*---------------------------------------------------------------*/
+
+
+@media(max-width: 500px) {
+    /*I am trying to make it responsive*/
+
+    .wfull {
+        flex-basis: 100%;
+    }
+
+}
+
+/*
+#Hovedstaden {
+    background-color: aquamarine;
+} */
+
+#guide {
+    background: burlywood;
+}
+
+/*  #Nordjylland {
+    background-color: chocolate;
+}
+
+#Sjælland {
+    background-color: darkolivegreen;
+}
+
+#Syddanmark {
+    background-color: darkorchid;
+}
+
+
+
+*/
