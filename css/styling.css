@@ -93,12 +93,14 @@ a,
     position: absolute;
     left: 30%;
     bottom: 2em;
+    font-family: "pragmatica-extended";
 }
 
 #searcher {
     margin: 2em;
     text-align: center;
     font-size: 1.2em;
+    font-family: "pragmatica-extended";
 }
 
 #searcher hr {
@@ -179,7 +181,7 @@ h5 {
     content: ' → ';
     border: none;
     background-color: #41223d;
-    font-family: sans-serif;
+    font-family: "pragmatica-extended";
     font-size: 3rem;
     color: white;
     height: 70px;
