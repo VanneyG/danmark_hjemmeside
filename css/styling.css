@@ -12,6 +12,7 @@ a {
 
 body {
     background-color: black;
+    ;
     min-height: 1000px;
     color: #a18835;
 }
@@ -134,6 +135,14 @@ ul li {
 h3,
 h5 {
     text-align: center;
+    color: #99BC76;
+
+}
+
+h3,
+h5,
+h1 {
+    font-family: "pragmatica-extended";
 }
 
 
