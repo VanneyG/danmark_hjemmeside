@@ -53,11 +53,11 @@ a,
     color: #292929;
     text-shadow: black .3px .3px;
     font-weight: bold;
-    font-size: medium;
+    font-size: 18px;
 }
 
 #searcher h3 {
-    color: #c229e0;
+    color: #8fcfeb;
     text-shadow: white .2px .2px;
 
 }
@@ -98,12 +98,12 @@ a,
 #searcher {
     margin: 2em;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 #searcher hr {
     height: 1.2em;
-    border-bottom: solid 2px #292929;
+    border-bottom: solid 2px #454849;
     border-left: none;
     border-right: none;
     border-top: none;
@@ -178,7 +178,7 @@ h5 {
 .carousel::scroll-button(left) {
     content: ' → ';
     border: none;
-    background-color: #0c217e;
+    background-color: #41223d;
     font-family: sans-serif;
     font-size: 3rem;
     color: white;
@@ -244,7 +244,7 @@ h5 {
 /*--------------------------------------------------------*/
 
 .card {
-    flex: 0 0 15em;
+    flex: 0 0 20em;
     /*flex positiona las tarjetas dando un ancho de 20, causando un overflow
   que automaticamente genera un scrollbar, por eso debimos desactivar el scrollbar arriba */
     height: 12em;
@@ -254,8 +254,9 @@ h5 {
     border-radius: .5em;
     text-align: center;
     align-content: center;
-    scroll-snap-align: start
-        /* va de la mano con el scroll-snap-type del contenedor;*/
+    scroll-snap-align: start;
+    /* va de la mano con el scroll-snap-type del contenedor;*/
+    width: 20em;
 }
 
 /*-----------------------------------------------------------*/
@@ -278,7 +279,7 @@ h5 {
 }
 
 .card::scroll-marker:target-current {
-    background-color: rgb(80, 39, 6)
+    background-color: rgb(20, 134, 115)
 }
 
 /*---------------------------------------------------------------*/
