@@ -53,7 +53,7 @@
         }
 
         #second_image {
-            clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 80%);
+            clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
             border-radius: 20px;
             margin-top: -80px;
 
@@ -101,9 +101,13 @@
             position: absolute;
             top: 38%;
             left: 35%;
-            font-size: 2.5vw;
             font-weight: bold;
             font-family: "pragmatica-extended";
+        }
+
+        .font_letters,
+        h4 {
+            font-size: 2.5vw;
         }
 
         .h1_third {
@@ -160,6 +164,83 @@
         .font_letters:hover {
             scale: 2;
         }
+
+        /*--------------------------------------*/
+        #comments {
+            min-height: 500px;
+            width: 100%;
+        }
+
+        #tittle_comment {
+            min-height: 60px;
+            border: solid rgb(228, 247, 232) .5px;
+            min-width: 200px;
+            text-align: center;
+            margin-left: 10%;
+            border-radius: 70px;
+        }
+
+        h4 {
+            padding-top: 20px;
+            padding-bottom: 2em;
+            text-shadow: black .4px .4px;
+            font-weight: bold;
+            font-size: 14px;
+
+        }
+
+        .image_comment {
+            display: block;
+            height: 11em;
+            width: 11em;
+            border-radius: 50%;
+            border: solid white .2em;
+            margin-top: 1em;
+            z-index: 1;
+        }
+
+        .image_commet2 {
+            margin-left: 60%;
+
+        }
+
+        .comment1,
+        #tittle_comment {
+            background-image: url('img/Freja/baggrund/baggrund-grøn.jpeg');
+            background-color: #c6deb6;
+            background-blend-mode: hard-light;
+
+        }
+
+
+        .comment1 {
+            min-height: 100px;
+            max-width: 75%;
+            border: solid white .2em;
+            box-shadow: grey 1px 1px inset;
+            margin-left: 0;
+            padding-top: 1em;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: center;
+            background-color: rgb(213, 236, 202);
+            margin-top: -2em;
+            z-index: -1;
+            border-radius: 40px;
+            position: relative;
+        }
+
+        .comment2 {
+            margin-left: 30%;
+
+        }
+
+        b {
+            color: rgb(30, 36, 21);
+            position: relative;
+            bottom: 1px;
+            left: 20%;
+        }
     </style>
 </head>
 
@@ -195,9 +276,35 @@
             </a>
 
         </section>
-        <section id="comments" class="box_image">
+        <section id="commments" class="box_image">
+            <section ID="tittle_comment">
+                <h4> HVAD FOLK SIGER OM OS </h4>
+            </section>
+            <img src="img/første_forside/woman_comment1.jpg" alt="" class="image_comment">
 
-            coments</section>
+
+            <section class="comment1">
+                <h4> "Jeg Kendte ingen, da jeg meldte mig til en
+                    fælles vandretur.Nu har jeg fået nye venner for livet! <br>
+                    <b> sofie,25 år</b>
+                </h4>
+            </section>
+
+
+
+            <img src="img/første_forside/man_comment2.jpg" alt="" class="image_comment image_commet2">
+
+
+            <section class="comment1 comment2" style="clear: both;">
+                <h4> "Jeg er ikke meget social.Derfor var jeg i første omgang bange for at
+                    rejse med fremmede folk, men det det gik virkelig fint.Vi havde det sjovt sammen.
+                    <br>
+                    <b> Marcus,27 år</b>
+                </h4>
+            </section>
+
+
+        </section>
     </div>
 </body>
 
