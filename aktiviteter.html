@@ -10,9 +10,11 @@
 
     <style>
         .beskrivelse {
-            height: 300px;
+            height: 340px;
             width: 100%;
             position: relative;
+            margin-top: 8%;
+            margin-bottom: 10px;
         }
 
         .imagen_aktivitet {
@@ -20,10 +22,6 @@
             margin-left: 10px;
             height: 100%;
             width: 300px;
-        }
-
-        .beskrivelse {
-            margin-top: 5%;
         }
 
         .beskrivelse p,
@@ -38,6 +36,7 @@
         hr {
             clear: both;
             margin-top: 10px;
+            margin-bottom: 10px;
             height: 10px;
             border-top: none;
             border-right: none;
@@ -45,6 +44,10 @@
             border-bottom: solid 2px gray;
             margin-left: 5%;
             margin-right: 5%;
+        }
+
+        span {
+            display: flex;
         }
     </style>
 
@@ -56,12 +59,27 @@
 
     <header>
 
-        <a href="index.html"> <img src="../hjemmeside_DK/img/Screenshot 2025-09-23 051642.png" alt=""> </a>
-        <nav>
+        <a href="index.html"> <img src="img/logo_white.png" alt="" id="logo"> </a>
+        <h1 id="motto"> VORES AKTIVITETER </h1>
+        <nav> <!--menu links-->
             <ul id="links">
-                <li> <a href="#">Mere om os</a></li>
-                <li> <a href="#">Mere om os</a></li>
-                <li> <a href="#">Mere om os</a></li>
+                <li><a href="index.html">
+                        <img src="img/ikons/hus_ikon.png" alt="" id="hus"></a>
+                </li>
+                </a>
+                <li> <a href="mereomos.html">Mere om os</a></li>
+
+                <div class="kontak_os">
+                    kontakt os
+                    <div id="box-ikons">
+                        <img src="img/ikons/e-mail_ikon.png" class="ikon" alt="">
+                        <img src="img/ikons/telefon_ikon.png" class="ikon" alt="">
+                        <img src="img/ikons/facebookicon.png" class="ikon" alt="">
+                        <img src="img/ikons/twittericon.png" class="ikon" alt="">
+                        <img src="img/ikons/instagramicon.png" class="ikon" alt="">
+
+                    </div>
+                </div>
             </ul>
         </nav>
     </header>
@@ -76,172 +94,199 @@
                 Tempore minus porro, consequatur hic delectus minima,
                 voluptas ducimus quo nisi exercitationem asperiores
                 dolore aliquam. Rem alias nemo deserunt distinctio culpa itaque.
+                <span> <a href="#"> <img src="img/ikons/køb_ikon.png" alt=""></a></span>
             </p>
-            <hr>
-            <section class="beskrivelse">
-                <img src="img/bikes in city.webp" alt="" class="imagen_aktivitet">
-                <h2 id="name1"> name of activity</h2>
-                <p>
+        </section>
+        <hr>
+        <section class="beskrivelse">
+            <img src="img/bikes in city.webp" alt="" class="imagen_aktivitet">
+            <h2 id="name1"> name of activity</h2>
+            <p>
 
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Tempore minus porro, consequatur hic delectus minima,
-                    voluptas ducimus quo nisi exercitationem asperiores
-                    dolore aliquam. Rem alias nemo deserunt distinctio culpa itaque.
-                </p>
-                <hr>
-                <section class="beskrivelse">
-                    <img src="img/kajak.jpg" alt="" class="imagen_aktivitet">
-                    <h2 id="name1"> name of activity</h2>
-                    <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tempore minus porro, consequatur hic delectus minima,
+                voluptas ducimus quo nisi exercitationem asperiores
+                dolore aliquam. Rem alias nemo deserunt distinctio culpa itaque.
+                <span> <a href="#"> <img src="img/ikons/køb_ikon.png" alt=""></a></span>
+            </p>
+        </section>
+        <hr>
+        <section class="beskrivelse">
+            <img src="img/kajak.jpg" alt="" class="imagen_aktivitet">
+            <h2 id="name1"> name of activity</h2>
+            <p>
 
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Tempore minus porro, consequatur hic delectus minima,
-                        voluptas ducimus quo nisi exercitationem asperiores
-                        dolore aliquam. Rem alias nemo deserunt distinctio culpa itaque.
-                    </p>
-                    <hr>
-                    <section class="beskrivelse">
-                        <img src="img/turmed venner.jpg" alt="" class="imagen_aktivitet">
-                        <h2 id="name1"> name of activity</h2>
-                        <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tempore minus porro, consequatur hic delectus minima,
+                voluptas ducimus quo nisi exercitationem asperiores
+                dolore aliquam. Rem alias nemo deserunt distinctio culpa itaque.
+                <span> <a href="#"> <img src="img/ikons/køb_ikon.png" alt=""></a></span>
+            </p>
+        </section>
+        <hr>
+        <section class="beskrivelse">
+            <img src="img/turmed venner.jpg" alt="" class="imagen_aktivitet">
+            <h2 id="name1"> name of activity</h2>
+            <p>
 
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Tempore minus porro, consequatur hic delectus minima,
-                            voluptas ducimus quo nisi exercitationem asperiores
-                            dolore aliquam. Rem alias nemo deserunt distinctio culpa itaque.
-                        </p>
-                        <hr>
-                        <section class="beskrivelse">
-                            <img src="img/ud-i-naturen.jpg" alt="" class="imagen_aktivitet">
-                            <h2 id="name1"> name of activity</h2>
-                            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tempore minus porro, consequatur hic delectus minima,
+                voluptas ducimus quo nisi exercitationem asperiores
+                dolore aliquam. Rem alias nemo deserunt distinctio culpa itaque.
+                <span> <a href="#"> <img src="img/ikons/køb_ikon.png" alt=""></a></span>
+            </p>
+        </section>
+        <hr>
+        <section class="beskrivelse">
+            <img src="img/ud-i-naturen.jpg" alt="" class="imagen_aktivitet">
+            <h2 id="name1"> name of activity</h2>
+            <p>
 
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                Tempore minus porro, consequatur hic delectus minima,
-                                voluptas ducimus quo nisi exercitationem asperiores
-                                dolore aliquam. Rem alias nemo deserunt distinctio culpa itaque.
-                            </p>
-                            <hr>
-                        </section>
-                        <section class="beskrivelse">
-                            <img src="img/strand.webp" alt="" class="imagen_aktivitet">
-                            <h2 id="name1"> name of activity</h2>
-                            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tempore minus porro, consequatur hic delectus minima,
+                voluptas ducimus quo nisi exercitationem asperiores
+                dolore aliquam. Rem alias nemo deserunt distinctio culpa itaque.
+                <span> <a href="#"> <img src="img/ikons/køb_ikon.png" alt=""></a></span>
+            </p>
+        </section>
+        <hr>
+        </section>
+        <section class="beskrivelse">
+            <img src="img/strand.webp" alt="" class="imagen_aktivitet">
+            <h2 id="name1"> name of activity</h2>
+            <p>
 
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                Tempore minus porro, consequatur hic delectus minima,
-                                voluptas ducimus quo nisi exercitationem asperiores
-                                dolore aliquam. Rem alias nemo deserunt distinctio culpa itaque.
-                            </p>
-                            <hr>
-                        </section>
-                        <section class="beskrivelse">
-                            <img src="img/amigos.jpg" alt="" class="imagen_aktivitet">
-                            <h2 id="name1"> name of activity</h2>
-                            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tempore minus porro, consequatur hic delectus minima,
+                voluptas ducimus quo nisi exercitationem asperiores
+                dolore aliquam. Rem alias nemo deserunt distinctio culpa itaque.
+                <span> <a href="#"> <img src="img/ikons/køb_ikon.png" alt=""></a></span>
+            </p>
+        </section>
+        <hr>
+        </section>
+        <section class="beskrivelse">
+            <img src="img/yoga.jpg" alt="" class="imagen_aktivitet">
+            <h2 id="name1"> name of activity</h2>
+            <p>
 
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                Tempore minus porro, consequatur hic delectus minima,
-                                voluptas ducimus quo nisi exercitationem asperiores
-                                dolore aliquam. Rem alias nemo deserunt distinctio culpa itaque.
-                            </p>
-                            <hr>
-                        </section>
-                        <section class="beskrivelse">
-                            <img src="img/amigos.jpg" alt="" class="imagen_aktivitet">
-                            <h2 id="name1"> name of activity</h2>
-                            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tempore minus porro, consequatur hic delectus minima,
+                voluptas ducimus quo nisi exercitationem asperiores
+                dolore aliquam. Rem alias nemo deserunt distinctio culpa itaque.
+                <span> <a href="#"> <img src="img/ikons/køb_ikon.png" alt=""></a></span>
+            </p>
+        </section>
+        <hr>
+        </section>
+        <section class="beskrivelse">
+            <img src="img/bådtur.jpg" alt="" class="imagen_aktivitet">
+            <h2 id="name1"> name of activity</h2>
+            <p>
 
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                Tempore minus porro, consequatur hic delectus minima,
-                                voluptas ducimus quo nisi exercitationem asperiores
-                                dolore aliquam. Rem alias nemo deserunt distinctio culpa itaque.
-                            </p>
-                            <hr>
-                        </section>
-                        <section class="beskrivelse">
-                            <img src="img/amigos.jpg" alt="" class="imagen_aktivitet">
-                            <h2 id="name1"> name of activity</h2>
-                            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tempore minus porro, consequatur hic delectus minima,
+                voluptas ducimus quo nisi exercitationem asperiores
+                dolore aliquam. Rem alias nemo deserunt distinctio culpa itaque.
+                <span> <a href="#"> <img src="img/ikons/køb_ikon.png" alt=""></a></span>
+            </p>
+        </section>
+        <hr>
+        </section>
+        <section class="beskrivelse">
+            <img src="img/bonfire.jpg" alt="" class="imagen_aktivitet">
+            <h2 id="name1"> name of activity</h2>
+            <p>
 
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                Tempore minus porro, consequatur hic delectus minima,
-                                voluptas ducimus quo nisi exercitationem asperiores
-                                dolore aliquam. Rem alias nemo deserunt distinctio culpa itaque.
-                            </p>
-                            <hr>
-                        </section>
-                        <section class="beskrivelse">
-                            <img src="img/amigos.jpg" alt="" class="imagen_aktivitet">
-                            <h2 id="name1"> name of activity</h2>
-                            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tempore minus porro, consequatur hic delectus minima,
+                voluptas ducimus quo nisi exercitationem asperiores
+                dolore aliquam. Rem alias nemo deserunt distinctio culpa itaque.
+                <span> <a href="#"> <img src="img/ikons/køb_ikon.png" alt=""></a></span>
+            </p>
+        </section>
+        <hr>
+        <section class="beskrivelse">
+            <img src="img/fladskærm.jpg" alt="" class="imagen_aktivitet">
+            <h2 id="name1"> name of activity</h2>
+            <p>
 
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                Tempore minus porro, consequatur hic delectus minima,
-                                voluptas ducimus quo nisi exercitationem asperiores
-                                dolore aliquam. Rem alias nemo deserunt distinctio culpa itaque.
-                            </p>
-                            <hr>
-                        </section>
-                        <section class="beskrivelse">
-                            <img src="img/amigos.jpg" alt="" class="imagen_aktivitet">
-                            <h2 id="name1"> name of activity</h2>
-                            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tempore minus porro, consequatur hic delectus minima,
+                voluptas ducimus quo nisi exercitationem asperiores
+                dolore aliquam. Rem alias nemo deserunt distinctio culpa itaque.
+                <span> <a href="#"> <img src="img/ikons/køb_ikon.png" alt=""></a></span>
+            </p>
+        </section>
+        <hr>
+        <section class="beskrivelse">
+            <img src="img/par-rejser.webp" alt="" class="imagen_aktivitet">
+            <h2 id="name1"> name of activity</h2>
+            <p>
 
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                Tempore minus porro, consequatur hic delectus minima,
-                                voluptas ducimus quo nisi exercitationem asperiores
-                                dolore aliquam. Rem alias nemo deserunt distinctio culpa itaque.
-                            </p>
-                            <hr>
-                        </section>
-                        <section class="beskrivelse">
-                            <img src="img/amigos.jpg" alt="" class="imagen_aktivitet">
-                            <h2 id="name1"> name of activity</h2>
-                            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tempore minus porro, consequatur hic delectus minima,
+                voluptas ducimus quo nisi exercitationem asperiores
+                dolore aliquam. Rem alias nemo deserunt distinctio culpa itaque.
+                <span> <a href="#"> <img src="img/ikons/køb_ikon.png" alt=""></a></span>
+            </p>
+        </section>
+        <hr>
+        <section class="beskrivelse">
+            <img src="img/fishing.jpg" alt="" class="imagen_aktivitet">
+            <h2 id="name1"> name of activity</h2>
+            <p>
 
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                Tempore minus porro, consequatur hic delectus minima,
-                                voluptas ducimus quo nisi exercitationem asperiores
-                                dolore aliquam. Rem alias nemo deserunt distinctio culpa itaque.
-                            </p>
-                            <hr>
-                        </section>
-                        <section class="beskrivelse">
-                            <img src="img/amigos.jpg" alt="" class="imagen_aktivitet">
-                            <h2 id="name1"> name of activity</h2>
-                            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tempore minus porro, consequatur hic delectus minima,
+                voluptas ducimus quo nisi exercitationem asperiores
+                dolore aliquam. Rem alias nemo deserunt distinctio culpa itaque.
+                <span> <a href="#"> <img src="img/ikons/køb_ikon.png" alt=""></a></span>
+            </p>
+        </section>
+        <hr>
+        <section class="beskrivelse">
+            <img src="img/billede (1).jpg" alt="" class="imagen_aktivitet">
+            <h2 id="name1"> name of activity</h2>
+            <p>
 
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                Tempore minus porro, consequatur hic delectus minima,
-                                voluptas ducimus quo nisi exercitationem asperiores
-                                dolore aliquam. Rem alias nemo deserunt distinctio culpa itaque.
-                            </p>
-                            <hr>
-                        </section>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tempore minus porro, consequatur hic delectus minima,
+                voluptas ducimus quo nisi exercitationem asperiores
+                dolore aliquam. Rem alias nemo deserunt distinctio culpa itaque.
+                <span> <a href="#"> <img src="img/ikons/køb_ikon.png" alt=""></a></span>
+            </p>
+        </section>
+        <hr>
+        <section class="beskrivelse">
+            <img src="img/billede (2).jpg" alt="" class="imagen_aktivitet">
+            <h2 id="name1"> name of activity</h2>
+            <p>
 
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tempore minus porro, consequatur hic delectus minima,
+                voluptas ducimus quo nisi exercitationem asperiores
+                dolore aliquam. Rem alias nemo deserunt distinctio culpa itaque.
+                <span> <a href="#"> <img src="img/ikons/køb_ikon.png" alt=""></a></span>
+            </p>
+        </section>
+        <hr>
+        <section class="beskrivelse">
+            <img src="img/billede (3).jpg" alt="" class="imagen_aktivitet">
+            <h2 id="name1"> name of activity</h2>
+            <p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tempore minus porro, consequatur hic delectus minima,
+                voluptas ducimus quo nisi exercitationem asperiores
+                dolore aliquam. Rem alias nemo deserunt distinctio culpa itaque.
+                <span> <a href="#"> <img src="img/ikons/køb_ikon.png" alt=""></a></span>
+            </p>
+        </section>
+        <hr>
 
 
     </div>
-
-
-
 
 
 </body>

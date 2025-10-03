@@ -36,7 +36,7 @@ header {
     height: 200px;
     background-color: darkcyan;
     position: relative;
-    background-image: url('../img/venner2');
+    background-image: url('../img/Freja/baggrund/baggrund-grøn.jpeg');
     text-shadow: rgb(36, 2, 34) 1px 1px;
 }
 
@@ -51,7 +51,7 @@ header {
 a,
 .kontak_os {
     text-decoration: none;
-    color: #292929;
+    color: white;
     text-shadow: black .3px .3px;
     font-weight: bold;
     font-size: 18px;
@@ -81,20 +81,12 @@ a,
 
 }
 
-
-
-
-#links a:active {
-    /* cuando hacemos click*/
-    color: rgb(37, 14, 34)
-}
-
-
 #motto {
     position: absolute;
     left: 30%;
     bottom: 2em;
     font-family: "pragmatica-extended";
+
 }
 
 #searcher {
@@ -133,7 +125,8 @@ ul li {
 }
 
 h3,
-h5 {
+h5,
+#motto {
     text-align: center;
     color: #99BC76;
 
@@ -145,6 +138,10 @@ h1 {
     font-family: "pragmatica-extended";
 }
 
+
+.carousel h5:hover {
+    color: white;
+}
 
 /*  carousel of images with the arrows to the sides. */
 .carousel {
