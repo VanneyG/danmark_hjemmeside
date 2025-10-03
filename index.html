@@ -36,7 +36,6 @@
             margin-left: 3em;
             margin-right: 3em;
             margin-bottom: 2em;
-            /* border-radius: 20px;*/
             position: relative;
         }
 
@@ -46,9 +45,10 @@
             clip-path: polygon(0 0, 100% 0, 100% 90%, 0 70%);
             /* hvorfor */
             border-radius: 20px;
-            margin-top: -40px;
+            margin-top: -80px;
             border-top-left-radius: 100px;
             border-top-right-radius: 20px;
+            clear: both;
 
         }
 
@@ -90,17 +90,6 @@
 
         /*----------------------------Det var images and sizes ----------------------------------------*/
 
-
-
-        #motto {
-
-            display: block;
-            margin-top: -70px;
-            font-size: 24px;
-            color: white;
-
-        }
-
         #motto,
         .font_letters {
             font-family: "pragmatica-extended";
@@ -110,32 +99,48 @@
         /*--------------------------------*/
         .font_letters {
             position: absolute;
-            top: 8%;
-            left: 33%;
+            top: 38%;
+            left: 35%;
             font-size: 2.5vw;
             font-weight: bold;
             font-family: "pragmatica-extended";
         }
 
-        .h1_second {
-            top: 12%;
+        .h1_third {
+
+            top: 45%;
+            left: 25%;
         }
 
-        .h1_third {
-            top: 12%;
-        }
 
         /*----------------------------------*/
         #logo_area {
+            margin-bottom: 3em;
+            display: flex;
+            flex-direction: column;
+            /*  flex-wrap: wrap; */
             position: relative;
+            align-items: center;
         }
 
         #logo {
-            position: relative;
-            left: 25%;
-            top: 2, 7em;
+            padding-top: 20px;
+            padding-bottom: 12%;
+
 
         }
+
+        #motto {
+            position: absolute;
+            font-size: 24px;
+            color: white;
+            top: 64%;
+
+        }
+
+
+        /*------------------------------------------------------------*/
+
 
         @media (max-width:990px) {
             #logo {
@@ -145,38 +150,22 @@
         }
 
 
-
-        #third_image h1 {
-            position: absolute;
-            top: 29%
-        }
-
         #contenedor a {
             text-decoration: none;
-            color: rgb(60, 15, 61);
-            text-shadow: .11px .5px rgb(3, 3, 3);
+            color: white;
+            text-shadow: 2px 2px black;
 
         }
 
         .font_letters:hover {
-            scale: 1.4;
+            scale: 2;
         }
-
-        /*   #logo_area::before {
-            content: url('img/første_forside/decorative_line2-.png');
-            object-fit: content;
-            display: block;
-            height: 2px;
-
-            width: 20px;
-        } */
     </style>
 </head>
 
 <body>
     <div id="contenedor">
         <section id="logo_area" class="box_image">
-
             <img src="img/logo_white.png" alt="" id="logo">
             <strong id="motto">UFORGLEMMELIGE OPLEVELSER NAER DIG</strong>
         </section>
@@ -186,18 +175,14 @@
         <section class="box_image" id="first_image">
             <img src="img/billede (1).jpg" alt="" class="image border1">
             <a href="Mødvenner.html" class="link_to_næste_side">
-                <h1 class="font_letters h1_first"> MØD NYE VENNER <br> <small class="linea">
-                    </small>
+                <h1 class="font_letters"> MØD NYE VENNER <br>
             </a>
 
         </section>
         <section class="box_image" id="second_image">
             <img src="img/billede (2).jpg" alt="" class="image border2">
             <a href="samvær.html" class="link_to_næste_side">
-                <h1 class="font_letters h1_second"> NÆVÆR FOR PAR
-                    <br> <br>
-                    <small class="linea">
-                    </small>
+                <h1 class="font_letters "> NÆVÆR FOR PAR
             </a>
             </h1>
         </section>
